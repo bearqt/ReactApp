@@ -1,0 +1,16 @@
+.image {
+	width: 50px;
+	height: 50px;
+}
+
+.media-item {
+	margin-bottom: 15px;
+	background-color: white ;
+	height: 50px;
+}
+
+
+.rating {
+	color: red;
+	float: right;
+}
