@@ -5,12 +5,12 @@ WORKDIR /code
 # Установка библиотек
 COPY yarn.lock .
 COPY package.json .
-RUN yarn install
+RUN npm install
 
 # Установка кода приложения
 COPY public public
 COPY src src
-RUN yarn build
+RUN npm build
 # <----- ЗАКОНЧИЛСЯ fronteend_builder
 
 FROM nginx:alpine
