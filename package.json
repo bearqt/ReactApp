@@ -40,9 +40,18 @@
     "webpack-cli": "^4.5.0",
     "webpack-dev-server": "^3.11.2"
   },
-  "browserslist": [
-    "last 2 versions"
-  ],
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "dependencies": {
     "@babel/plugin-proposal-async-generator-functions": "^7.13.5",
     "@babel/plugin-proposal-class-properties": "^7.13.0",
