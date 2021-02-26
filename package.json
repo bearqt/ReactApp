@@ -41,7 +41,7 @@
     "webpack-dev-server": "^3.11.2"
   },
   "browserslist": [
-    "last 2 versions"
+    "last 2 version"
   ],
   "dependencies": {
     "@babel/plugin-proposal-async-generator-functions": "^7.13.5",
