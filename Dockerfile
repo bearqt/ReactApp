@@ -10,7 +10,7 @@ RUN npm install
 # Установка кода приложения
 # COPY public public
 COPY src src
-RUN npm run-script dev
+RUN npm run-script build
 # <----- ЗАКОНЧИЛСЯ fronteend_builder
 
 FROM nginx:alpine
