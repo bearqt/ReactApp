@@ -8,7 +8,7 @@ COPY package.json .
 RUN npm install
 
 # Установка кода приложения
-COPY public public
+# COPY public public
 COPY src src
 RUN npm build
 # <----- ЗАКОНЧИЛСЯ fronteend_builder
