@@ -1,7 +1,7 @@
 {
   "name": "lecture_5",
   "version": "1.0.0",
-  "main": "src/index.js",
+  "main": "src/index.jsx",
   "license": "MIT",
   "scripts": {
     "dev": "NODE_ENV=development npx webpack serve --mode development",
