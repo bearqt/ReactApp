@@ -4,7 +4,7 @@ const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin'
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ForkTsCheckerPlugin = require('fork-ts-checker-webpack-plugin');
 
-const srcPath = path.resolve(__dirname, 'src');
+const srcPath = path.resolve(__dirname, './src'); // added ./
 const isProd = process.env.NODE_ENV === 'production';
 
 const plugins = [
