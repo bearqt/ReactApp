@@ -48,7 +48,7 @@ const  getCssRules = (withModules) => {
 }
 
 module.exports = {
-  entry: path.join(srcPath, 'index.tsx'),
+  entry: path.join(srcPath, './index.tsx'),
   devtool: 'eval-source-map',
   output: {
     path:  path.resolve(__dirname, 'dist'),
