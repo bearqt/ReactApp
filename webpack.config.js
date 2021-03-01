@@ -9,7 +9,7 @@ const isProd = process.env.NODE_ENV === 'production';
 
 const plugins = [
   new HtmlWebpackPlugin({
-    template: path.join(srcPath, 'index.html')
+    template: path.join(srcPath, './index.html')
   }),
   !isProd && new ReactRefreshWebpackPlugin(),
   new MiniCssExtractPlugin({
@@ -51,7 +51,7 @@ module.exports = {
   entry: path.join(srcPath, './index.tsx'),
   devtool: 'eval-source-map',
   output: {
-    path:  path.resolve(__dirname, 'dist'),
+    path:  path.resolve(__dirname, './dist'),
     filename: 'bundle.js',
     publicPath: '/'
   },
@@ -85,7 +85,7 @@ module.exports = {
   resolve: {
     extensions: ['.jsx', '.js', '.tsx', '.ts'],
     alias: {
-      components: path.resolve(srcPath, 'components')
+      components: path.resolve(srcPath, '/Components')
     }
   },
   plugins,
