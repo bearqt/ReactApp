@@ -6,6 +6,7 @@ WORKDIR /code
 COPY yarn.lock .
 COPY package.json .
 COPY webpack.config.js .
+COPY tsconfig.json .
 RUN npm install
 
 # Установка кода приложения
