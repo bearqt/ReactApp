@@ -7,6 +7,7 @@ COPY yarn.lock .
 COPY package.json .
 COPY webpack.config.js .
 COPY tsconfig.json .
+COPY babel.config.js .
 RUN npm install
 
 # Установка кода приложения
