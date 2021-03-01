@@ -5,11 +5,12 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ForkTsCheckerPlugin = require('fork-ts-checker-webpack-plugin');
 
 const srcPath = path.resolve(__dirname, 'src'); 
+const publicPath = path.resolve(__dirname, './public');
 const isProd = process.env.NODE_ENV === 'production';
 
 const plugins = [
   new HtmlWebpackPlugin({
-    template: path.join(srcPath, 'index.html')
+    template: path.join(publicPath, 'index.html')
   }),
   !isProd && new ReactRefreshWebpackPlugin(),
   new MiniCssExtractPlugin({
