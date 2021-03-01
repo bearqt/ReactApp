@@ -4,7 +4,7 @@ const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin'
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ForkTsCheckerPlugin = require('fork-ts-checker-webpack-plugin');
 
-const srcPath = path.resolve(__dirname, 'src'); 
+const srcPath = path.resolve(__dirname, './src'); 
 const publicPath = path.resolve(__dirname, './public');
 const isProd = process.env.NODE_ENV === 'production';
 
@@ -86,7 +86,7 @@ module.exports = {
   resolve: {
     extensions: ['.jsx', '.js', '.tsx', '.ts'],
     alias: {
-      components: path.resolve(srcPath, 'Components')
+      components: path.resolve(srcPath, './Components')
     }
   },
   plugins,
